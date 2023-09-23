@@ -5,6 +5,7 @@ import ImgBanner from "./images/banner.jpg"
 import { Avatar, Box, Divider, Grid, IconButton, ListItemIcon, Menu, MenuItem, Tooltip, Typography } from '@mui/material'
 import DriveEtaIcon from '@mui/icons-material/DriveEta';
 import Button from '@mui/material/Button';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Header = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -33,19 +34,19 @@ const Header = () => {
                         <Grid item lg={3}><input className='search' type="text" placeholder='Từ khóa tìm kiếm' /></Grid>
                     </Grid>
                 </div>
-                <hr />
+                <hr style={{ border: "1px #80808026 solid", marginTop: -5 }} />
                 <div className='warrap-header'>
                     <Box className='menu-merce warrap-header' sx={{ display: 'flex', alignItems: 'center', textAlign: "center" }} >
                         <Typography sx={{ minWidth: 200 }}>
                             <Box sx={{ display: "flex", alignItems: "center" }}>
                                 <DriveEtaIcon style={{ fontSize: "20px", marginBottom: "2px" }} />
-                                <p style={{ paddingLeft: "6px" }}>Các dòng xe</p>
+                                <p className='w-header' style={{ paddingLeft: "6px" }}>Các dòng xe</p>
                             </Box>
                         </Typography>
-                        <Typography sx={{ minWidth: 200 }}>Mua trực tuyến</Typography>
-                        <Typography sx={{ minWidth: 200 }}>Tư vấn mua xe</Typography>
-                        <Typography sx={{ minWidth: 200 }}>Dịch vụ</Typography>
-                        <Typography sx={{ minWidth: 200 }}>Thế giới Mercedes-Benz</Typography>
+                        <Typography className='w-header' sx={{ minWidth: 200 }}><p>Mua trực tuyến</p></Typography>
+                        <Typography className='w-header' sx={{ minWidth: 200 }}><p>Tư vấn mua xe</p></Typography>
+                        <Typography className='w-header' sx={{ minWidth: 200 }}><p>Dịch vụ</p></Typography>
+                        <Typography className='w-header' sx={{ minWidth: 200 }}><p>Thế giới Mercedes-Benz</p></Typography>
                     </Box>
                     <Menu
                         // anchorEl={anchorEl}
@@ -110,21 +111,20 @@ const Header = () => {
                     </Menu>
                 </div>
                 <hr />
-                <h3 style={{ textAlign: 'center', fontSize: 18 }}>Khám phá những <u>ưu đãi tốt nhất</u> tại cửa hàng trực tuyến</h3>
+                <h3 className='header-center' style={{ textAlign: 'center', fontSize: 17 }}>Khám phá những <u style={{ cursor: 'pointer' }}>ưu đãi tốt nhất</u> tại cửa hàng trực tuyến</h3>
             </div>
-            <hr />
 
             <div className='banner'>
                 <img className='img-fluid' src={ImgBanner} alt="" />
                 <div className='text-banner'>
                     <h1 className='title-banner'>Lựa Chọn Là Của Bạn</h1>
-                    <h3 style={{ background: "none" }}>Chỉ trong tháng 8 và 9/2023 - Ưu đãi tương ứng 50% thuế VAT
+                    <h3 style={{ background: "none", color: 'white' }}>Chỉ trong tháng 8 và 9/2023 - Ưu đãi tương ứng 50% thuế VAT
                         dành cho lựa chọn xe Mercedes-Benz của bạn [1] </h3>
-                    <Button variant="contained" color="primary">
+                    {/* <Button variant="contained" color="primary">
                         Tìm xe có sẵn cùng ưu đãi
-                    </Button>
+                    </Button> */}
                     <Button variant="contained" color="primary">
-                        Tìm hiểu chương trình
+                        Tìm hiểu chương trình <ArrowForwardIosIcon style={{ fontSize: 14, fontWeight: 'bold', marginBottom: 3, marginLeft: 3 }} />
                     </Button>
                     <div className='note-header'>
 

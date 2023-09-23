@@ -1,7 +1,7 @@
-* {
-    /* background-color: black; */
-    color: white;
-    /* font-size: 18px; */
+:root {
+    --color-header: white;
+    --title-banner: black;
+    --gray-color: rgb(151, 151, 151);
 }
 .container {
     width: 80%;
@@ -16,7 +16,18 @@
     width: 90% !important;
     margin: auto;
     background-color: black;
-    font-size: 17px;
+    font-size: 15px;
+    color: var(--gray-color);
+}
+.warrap-header p {
+    cursor: pointer;
+}
+.warrap-header p :hover {
+    color: var(--color-header);
+    transition: 0.5s;
+}
+.header-center {
+    color: var(--color-header);
 }
 
 .img-fluid {
@@ -26,13 +37,14 @@
     position: absolute;
     top: 64px;
     left: 230px;
-    font-weight: bold;
-    font-size: 18px;
+    /* font-weight: bold; */
+    font-size: 17px;
+    color: var(--color-header);
 }
 .copyright {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 50px;
-    color: rgb(151, 151, 151);
+    color: var(--gray-color);
 }
 .language {
     margin-top: 50px;
@@ -40,6 +52,7 @@
     margin-right: 2px;
     font-size: 12px;
     border-radius: 4px;
+    color: var(--color-header);
 }
 .search {
     margin-top: 38px;
@@ -65,8 +78,8 @@
 }
 .text-banner {
     position: absolute;
-    top: 120px;
-    width: 60%;
+    top: 60px;
+    width: 52%;
     background: none;
     left: 120px;
     font-size: 17px;
@@ -78,10 +91,12 @@
 .title-banner {
     font-size: 40px;
     background: none;
+    color: var(--color-header);
 }
 .note-header {
     position: absolute;
     font-size: 12px;
     width: 100%;
     margin-top: 170px;
+    color: var(--title-banner);
 }

@@ -12,9 +12,9 @@ const Footer = () => {
     return (
         <div className='footer' style={{ background: "black", width: "100%" }}>
             <div className='container'>
-                <div style={{ textAlign: 'center' }}>
-                    <KeyboardArrowUpIcon style={{ fontSize: 60, marginTop: 20 }} />
-                    <p style={{ marginTop: 'none' }}>Lên trên</p>
+                <div className='direct' style={{ textAlign: 'center' }}>
+                    <KeyboardArrowUpIcon style={{ fontSize: 60, marginTop: 20, color: 'white' }} />
+                    <p style={{ marginTop: 'none', color: 'white' }}>Lên trên</p>
                     <br />
                 </div>
                 <div className='footer-top'>
@@ -143,23 +143,23 @@ const Footer = () => {
                 </Box> */}
                 <Grid container spacing={2}>
                     <Grid item lg={2}>
-                        <p>Bản quyền nội dung</p>
+                        <p className='footer-bottom' style={{ marginTop: 20 }}>Bản quyền nội dung</p>
                     </Grid>
                     <Grid item lg={1}>
-                        <p>Cài đặt</p>
+                        <p className='footer-bottom' style={{ marginTop: 20 }}>Cài đặt</p>
                     </Grid>
                     <Grid item lg={3}>
-                        <p>Quyền riêng tư và bảo vệ dữ liệu</p>
+                        <p className='footer-bottom' style={{ marginTop: 20 }}>Quyền riêng tư và bảo vệ dữ liệu</p>
                     </Grid>
                     <Grid item lg={2}>
-                        <p>Thông tin pháp lý</p>
+                        <p className='footer-bottom' style={{ marginTop: 20 }}>Thông tin pháp lý</p>
                     </Grid>
                     <Grid item lg={1}></Grid>
                     <Grid item lg={3} className='icon-footer'>
-                        <FacebookIcon style={{ fontSize: 30, marginRight: 20, marginTop: 10 }} />
-                        <YouTubeIcon style={{ fontSize: 30, marginRight: 20, marginTop: 10 }} />
-                        <InstagramIcon style={{ fontSize: 30, marginRight: 20, marginTop: 10 }} />
-                        <LinkedInIcon style={{ fontSize: 30, marginRight: 20, marginTop: 10 }} />
+                        <FacebookIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
+                        <YouTubeIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
+                        <InstagramIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
+                        <LinkedInIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
                     </Grid>
                 </Grid>
 
