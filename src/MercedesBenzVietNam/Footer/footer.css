@@ -1,0 +1,101 @@
+/* .footer .container .footer-top .footer-bottom {
+    display: flex;
+    width: 200px;
+    height: 50px;
+} */
+:root {
+    --footer-color: white;
+    --item-color: rgb(151, 151, 151);
+}
+.direct p {
+    margin-top: -3px;
+}
+.keepinfo {
+    border: 1px solid gray;
+}
+.footer-bottom {
+    display: flex;
+    /* position: relative;
+    z-index: 10; */
+    margin-top: 50px;
+}
+.footer-item {
+    margin-right: 35px;
+    margin-top: none;
+    width: 25%;
+}
+.footer-item ul {
+    list-style: none;
+    padding: 0px;
+}
+.footer-item li {
+    margin-top: 20px;
+}
+.footer-item a {
+    text-decoration: none;
+    color: rgba(231, 231, 231, 0.589);
+    font-size: 15px;
+    display: inline-block;
+    width: auto;
+}
+.footer-item li:hover a {
+    color: var(--footer-color);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+/* trước hover */
+/* .footer-item ul li:after {
+    content: "";
+    width: 0;
+    height: 5px;
+    background: #b7b931;
+    display: block;
+    transition: all 0.5s;
+} */
+
+/* sau hover */
+.footer-item ul li:hover a:after {
+    width: 100%;
+}
+
+.footer-item a {
+}
+.footer-item a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #88a22c;
+    display: block;
+    transition: all 0.5s;
+}
+
+.footer-item h3 {
+    font-size: 16px;
+    color: white;
+}
+.footer-icon {
+    margin-right: 0px;
+}
+.keepinfo h3 {
+    margin-left: 30px;
+    font-size: 17px;
+    color: white;
+}
+.keepinfo p {
+    margin-left: 30px;
+    font-size: 15px;
+    color: rgb(165, 161, 161);
+    margin-bottom: 26px;
+}
+.keepinfo button {
+    margin-left: 245px;
+    margin-top: 25px;
+}
+.footer-bottom {
+    color: rgb(165, 161, 161);
+}
+.icon-footer {
+    margin-left: 200px;
+    margin-top: 50px;
+    color: white;
+}
