@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import MercedesBenzVietNam from './MercedesBenzVietNam/MercedesBenzVietNam';
+import React from "react"
+import "./App.css"
+import MercedesBenzVietNam from "./MercedesBenzVietNam/MercedesBenzVietNam"
 
 function App() {
-  return (
-    <MercedesBenzVietNam />
-  );
+    return <MercedesBenzVietNam />
 }
 
-export default App;
+export default App

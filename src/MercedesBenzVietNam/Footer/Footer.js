@@ -1,24 +1,24 @@
-import React from 'react'
-import './footer.css'
-import { Box, Grid } from '@mui/material'
-import Button from '@mui/material/Button';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import React from "react"
+import "./footer.css"
+import { Box, Grid } from "@mui/material"
+import Button from "@mui/material/Button"
+import FacebookIcon from "@mui/icons-material/Facebook"
+import YouTubeIcon from "@mui/icons-material/YouTube"
+import InstagramIcon from "@mui/icons-material/Instagram"
+import LinkedInIcon from "@mui/icons-material/LinkedIn"
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp"
 
 const Footer = () => {
     return (
-        <div className='footer' style={{ background: "black", width: "100%" }}>
-            <div className='container'>
-                <div className='direct' style={{ textAlign: 'center' }}>
-                    <KeyboardArrowUpIcon style={{ fontSize: 60, marginTop: 20, color: 'white' }} />
-                    <p style={{ marginTop: 'none', color: 'white' }}>Lên trên</p>
+        <div className="footer" style={{ background: "black", width: "100%" }}>
+            <div className="container">
+                <div className="direct" style={{ textAlign: "center" }}>
+                    <KeyboardArrowUpIcon style={{ fontSize: 60, marginTop: 20, color: "white" }} />
+                    <p style={{ marginTop: "none", color: "white" }}>Lên trên</p>
                     <br />
                 </div>
-                <div className='footer-top'>
-                    <Grid container spacing={1} className='keepinfo'>
+                <div className="footer-top">
+                    <Grid container spacing={1} className="keepinfo">
                         <Grid item xs={12} lg={6}>
                             <h3>Giữ liên lạc với chúng tôi.</h3>
                             <p>Các thông tin hiện tại được điều chỉnh theo sở thích của bạn.</p>
@@ -32,8 +32,7 @@ const Footer = () => {
                     </Grid>
                 </div>
 
-                <div className='footer-bottom'>
-
+                <div className="footer-bottom">
                     <div className="footer-item">
                         <h3>Mua xe</h3>
                         <ul>
@@ -63,7 +62,6 @@ const Footer = () => {
                             <li>
                                 <a>Tìm Nhà Phân Phối gần nhất</a>
                             </li>
-
                         </ul>
                     </div>
                     <div className="footer-item">
@@ -143,26 +141,33 @@ const Footer = () => {
                 </Box> */}
                 <Grid container spacing={2}>
                     <Grid item lg={2}>
-                        <p className='footer-bottom' style={{ marginTop: 20 }}>Bản quyền nội dung</p>
+                        <p className="footer-bottom" style={{ marginTop: 20 }}>
+                            Bản quyền nội dung
+                        </p>
                     </Grid>
                     <Grid item lg={1}>
-                        <p className='footer-bottom' style={{ marginTop: 20 }}>Cài đặt</p>
+                        <p className="footer-bottom" style={{ marginTop: 20 }}>
+                            Cài đặt
+                        </p>
                     </Grid>
                     <Grid item lg={3}>
-                        <p className='footer-bottom' style={{ marginTop: 20 }}>Quyền riêng tư và bảo vệ dữ liệu</p>
+                        <p className="footer-bottom" style={{ marginTop: 20 }}>
+                            Quyền riêng tư và bảo vệ dữ liệu
+                        </p>
                     </Grid>
                     <Grid item lg={2}>
-                        <p className='footer-bottom' style={{ marginTop: 20 }}>Thông tin pháp lý</p>
+                        <p className="footer-bottom" style={{ marginTop: 20 }}>
+                            Thông tin pháp lý
+                        </p>
                     </Grid>
                     <Grid item lg={1}></Grid>
-                    <Grid item lg={3} className='icon-footer'>
+                    <Grid item lg={3} className="icon-footer">
                         <FacebookIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
                         <YouTubeIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
                         <InstagramIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
                         <LinkedInIcon style={{ fontSize: 30, marginRight: 20, marginTop: 15 }} />
                     </Grid>
                 </Grid>
-
             </div>
         </div>
     )
